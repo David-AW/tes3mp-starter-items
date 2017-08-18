@@ -1,7 +1,7 @@
 Methods = {}
 
--- Put [ starterItems = require("starterItems") ] somewhere at the top of player/base.lua
--- Find "self:CreateAccount()" inside player/base.lua and insert [ starterItems.GiveStarterItems(self.pid) ] directly underneath it.
+-- Put [ starterItems = require("starterItems") ] somewhere at the top of myMod.lua
+-- Find "Players[pid]:EndCharGen()" inside myMod.lua and insert [ starterItems.GiveStarterItems(pid) ] directly underneath it.
 
 -- To add more items just add another bracket set with the info, IE: {"common_shirt_01", 1, -1} separated by commas.
 -- data inside being organized by {"Item Ref ID", amount, charge}
